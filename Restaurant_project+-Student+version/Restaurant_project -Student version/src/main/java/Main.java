@@ -3,10 +3,11 @@ import java.time.LocalTime;
 public class Main {
     public static void main(String[] args){
         //these are for testing purpose only...
-        LocalTime openingTime = LocalTime.parse("10:30:00");
-        LocalTime closingTime = LocalTime.parse("22:00:00");
-        Restaurant restaurant = new Restaurant("Amelie's cafe","Chennai",openingTime,closingTime);
-        restaurant.addToMenu("Sweet corn soup",119);
-        restaurant.addToMenu("Vegetable lasagne", 269);
+
+        Restaurant restaurant1 = new Restaurant("Pardise","Secunderabad", LocalTime.parse("10:15:00"),LocalTime.parse("23:59:59"));
+        Restaurant restaurant2 = new Restaurant("Bawarchi","RTC Cross Roads", LocalTime.parse("11:15:00"),LocalTime.parse("22:59:59"));
+        Restaurant restaurant3 = new Restaurant("Pardise","Secunderabad", LocalTime.parse("10:15:00"),LocalTime.parse("23:59:59"));
     }
+
+
 }
