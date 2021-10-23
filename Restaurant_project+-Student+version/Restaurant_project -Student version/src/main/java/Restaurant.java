@@ -72,8 +72,10 @@ public class Restaurant {
 
     public double getOrderValue(List<Item>item) {
         double orderValue = 0;
-
-    return orderValue;
+        for(Item items:item){
+            orderValue = items.getPrice();
+        }
+        return orderValue;
     }
 
 }
